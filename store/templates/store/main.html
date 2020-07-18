@@ -52,12 +52,12 @@
             return null;
         }
         var cart = JSON.parse(getCookie('cart'))
-        console.log('Cart:', cart);
         if (cart == undefined){
             cart = {}
             console.log('Cart Created...');
             document.cookie = 'cart=' + JSON.stringify(cart)
         }
+        console.log('Card:', cart)
     </script>
 </head>
 <body>
